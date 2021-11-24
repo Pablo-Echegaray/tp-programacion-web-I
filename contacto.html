@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/contacto.css">
+        <!-- Link iconos fontawesome -->
+        <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1e46a79380.js" crossorigin="anonymous"></script>
+        <!-- JS MENU -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      
+        <script src="js/jquery.min.js"></script>
+        <script src="js/funciones.js"></script>
+       
+        <title>Contactenos</title>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="social__media">
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="nosotros.html">NOSOTROS</a></li>
+               <li><a href="establecimientos.html">ESTABLECIMIENTOS</a></li>
+               <li><a href="inscripcion.html">INSCRIPCION</a></li>
+               <li><a href="calendario.html">CALENDARIO</a></li>
+               <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <section class="contacto">
+            <div class="formulario">
+                <form action="#" method="post" id="form">
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" name="name" placeholder="Escribe tu nombre" title="Sólo acepta letras, espacios en blanco y entre 8 y 30 caracteres" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{8,30}$" required>
+                <label for="email">Ingresa tu email</label>
+                <input type="email" name="email" placeholder="Escrribe tu email" title="Email incorreco" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <label for="tel">Ingresa tu telefono</label>
+                <input type="tel" name="tel" placeholder="Ingrese su Telefono" title="Deben ser entre 8 y 10 digitos numericos" pattern="^[0-9]{8,10}$" required>
+                <label for="mensaje">Consulta</label>
+                <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" title="Su consulta no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+                <div class="contact-form-loader none"><img src="./img/loader.svg" alt="Cargando"></div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+                <input type="submit" value="Enviar">
+                </form>
+                </div>
+        </section>
+        <section class="ubicacion">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.12948737532!2d-58.620803164217065!3d-34.65143264687772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc766d35d1e85%3A0x8765322586346ab6!2s25%20de%20Mayo%20226%2C%20B1708JAF%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1631721561923!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grupo">
+            <h3>Datos del Grupo</h3>
+            <ul>
+              <li>Ruiz Diaz Juan Ramón - 31774500</li>
+              
+              <li>Echegaray Pablo Jonathan - 38947619</li>
+              <li>Mico Alan Nahuel - 33935135</li>
+            </ul>
+
+        </div>
+        <div class="mapa__sitio">
+            <p class="titulo_mapa_sitio">MAPA DE SITIO</p>
+            <ul>
+                
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+     <!-- VALIDACION FORMULARIO JS -->
+     <!-- <script src="js/validarContacto.js"></script> -->
+     <script src="./js/validacionForms.js"></script>
+</body>
+</html>

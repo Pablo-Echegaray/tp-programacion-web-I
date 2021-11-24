@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/inscripcion.css">
+        <!-- Link iconos fontawesome -->
+        <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1e46a79380.js" crossorigin="anonymous"></script>
+        <!-- JS MENU -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/funciones.js"></script>
+        
+        <title>Home</title>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="social__media">
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="nosotros.html">NOSOTROS</a></li>
+               <li><a href="establecimientos.html">ESTABLECIMIENTOS</a></li>
+               <li><a href="inscripcion.html">INSCRIPCION</a></li>
+               <li><a href="calendario.html">CALENDARIO</a></li>
+               <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+    <main>
+        <h1>INSCRIPCION</h1>
+        <div class="datos__curso">
+        <p id="desc-gral"></p>
+        <p id="desc-horario"></p>
+        <p id="desc-precio"></p>
+        </div>
+        <section class="contacto">
+            <div class="seccion__1">
+            <form action="#" method="post" id="form">
+                    <label for="nombre" class="nombre">Nombre</label>
+                    <input type="text" name="name" placeholder="Escribe tu nombre" title="Deben ser solo letras, entre 3 y 10" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]{3,10}$" required>
+                    
+                    <label for="apellido" class="apellido">Apellido</label>
+                    <input type="text" name="apellido"  placeholder="Ingrese su Apellido" title="Deben ser solo letras, entre 3 y 10" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]{3,10}$" required>
+                    <label for="mail">Ingresa tu email</label>
+                    <input type="email" name="email" placeholder="Escrribe tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            </div>
+            <div class="seccion__2">
+                    <label for="tel">Ingresa tu telefono</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Ingrese su Telefono" title="Deben ser entre 8 y 10 digitos numericos" pattern="^[0-9]{8,10}$" required>
+                    <label for="provincia">Provincia </label>
+                    <select name="provincia" id="provincia">
+                        <option value=“Bs_As”>Buenos Aires</option>
+                        <option value=“Sta_Fe”>Santa Fé</option>
+                        <option value=“Córdoba”>Córdoba</option>
+                    </select>
+                    <div class="contact-form-loader none"><img src="./img/loader.svg" alt="Cargando"></div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+                    <input type="submit" value="Inscribite">
+                    <input type="reset" value="Borrar">
+            </div>  
+        </form>      
+        </section>
+    </main>
+    <footer>
+        <div class="grupo">
+            <h3>Datos del Grupo</h3>
+            <ul>
+              <li>Ruiz Diaz Juan Ramón - 31774500</li>
+              
+              <li>Echegaray Pablo Jonathan - 38947619</li>
+              <li>Mico Alan Nahuel - 33935135</li>
+            </ul>
+
+        </div>
+        <div class="mapa__sitio">
+            <p class="titulo_mapa_sitio">MAPA DE SITIO</p>
+            <ul>
+                
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <!-- <script src="./js/validarFormulario.js"></script> -->
+    <script src="./js/storageInscripcion.js"></script>
+    <script src="./js/validacionForms.js"></script>
+</body>
+</html>
+
+
+<!--  <form action="https://formsubmit.co/pabloechegaray95@gmail.com" method="POST" target="_blank" class="contact-form">
+                <legend>Envianos tus comentarios</legend>
+                <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input type="email" name="email" placeholder="Escrribe tu email" title="Email incorreco" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input type="text" name="subject" placeholder="Asunto a tratar" title="El Asunto es requerido" required>
+                <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+                <input type="submit" value="Enviar">
+                <div class="contact-form-loader none"><img src="assets/loader.svg" alt="Cargando"></div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+            </form>-->

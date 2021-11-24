@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/establecimientos.css">
+        <!-- Link iconos fontawesome -->
+        <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1e46a79380.js" crossorigin="anonymous"></script>
+        <!-- JS MENU -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
+        <script src="js/jquery.min.js"></script>
+        <script src="js/funciones.js"></script>
+        <title>Home</title>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="social__media">
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="nosotros.html">NOSOTROS</a></li>
+               <li><a href="establecimientos.html">ESTABLECIMIENTOS</a></li>
+               <li><a href="inscripcion.html">INSCRIPCION</a></li>
+               <li><a href="calendario.html">CALENDARIO</a></li>
+               <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
+        </nav>
+        <a class="desplegable"></a>
+      
+    </header>
+    <main>
+         
+        <section>
+            <article class="search">
+            <h1>Establecimientos</h1>
+            <input type="search" name="search" id="search" placeholder="filtrar por provincia">
+            </article>
+
+            <article class="place">
+                <img src="./img/establecimiento-A.jpg" alt="">
+                <div>
+                    <h2>Establecimiento Moron</h2>
+                    <p>Direccion</p>
+                    <p class='provincia'>Buenos Aires</p>
+                    <p>Idiomas que se cursan</p>
+                    <button id="moron">Ver Detalle</button>
+                </div>
+            </article>
+            <article class="place">
+                <img src="./img/establecimiento-B.jpg" alt="">
+                <div>
+                    <h2>Instituto de Rosario</h2>
+                    <p>Direccion</p>
+                    <p class='provincia'>Santa Fe</p>
+                    <p>Idiomas que se cursan</p>
+                    <button id="santafe">Ver Detalle</button>
+                </div>
+            </article>
+            <article class="place">
+                <img src="./img/establecimiento-C.jpeg" alt="">
+                <div>
+                    <h2>Instituto Cisnes</h2>
+                    <p>Direccion</p>
+                    <p class='provincia'>Cordoba</p>
+                    <p>Idiomas que se cursan</p>
+                    <button id="cordoba">Ver Detalle</button>
+                </div>
+            </article>
+            <article class="place">
+                <img src="./img/establecimiento-D.jpg" alt="">
+                <div>
+                    <h2>Establecimiento Ituzaingo</h2>
+                    <p>Direccion</p>
+                    <p class='provincia'>Buenos Aires</p>
+                    <p>Idiomas que se cursan</p>
+                    <button id="ituz">Ver Detalle</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grupo">
+            <h3>Datos del Grupo</h3>
+            <ul>
+              <li>Ruiz Diaz Juan Ramón - 31774500</li>
+              
+              <li>Echegaray Pablo Jonathan - 38947619</li>
+              <li>Mico Alan Nahuel - 33935135</li>
+            </ul>
+
+        </div>
+        <div class="mapa__sitio">
+            <p class="titulo_mapa_sitio">MAPA DE SITIO</p>
+            <ul>
+                
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="./js/filtroRedireccion.js"></script>
+</body>
+</html>

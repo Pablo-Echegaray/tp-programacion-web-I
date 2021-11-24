@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Calendario</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendario.css">
+    <!-- Fuentes -->
+    <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- JS MENU -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="social__media">
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="nosotros.html">NOSOTROS</a></li>
+               <li><a href="establecimientos.html">ESTABLECIMIENTOS</a></li>
+               <li><a href="inscripcion.html">INSCRIPCION</a></li>
+               <li><a href="calendario.html">CALENDARIO</a></li>
+               <li><a href="contacto.html">CONTACTO</a></li>
+           </ul>
+        </nav>
+        <a class="desplegable"></a>
+      
+    </header>
+    <main>
+        <h1 class="titulo">CALENDARIO DE CURSOS</h1>
+        <section class="contenedor-seleccion">
+            <form action="#" method="POST" enctype="application/x-www-form-urlencoded" >
+                <label for="refinar">Filtrar por:</label>
+                <select name="refinar" id="refinar">
+                    <option value="#">Establecimiento</option>
+                    <option value="moron">Morón</option>
+                    <option value="ramos">Ramos Mejia</option>
+                    <option value="san justo">San Justo</option>
+                   <option value="ituzaingo">Ituzaingo</option>
+                </select>
+                    <label for="idioma">Idioma:</label>
+                    <select name="idioma" id="idioma">
+                        <option value="#">Idioma</option>
+                        <option value="ingles">Ingles</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="protugues">Portugues</option>
+                        <option value="frances">Frances</option>
+                    </form>
+                </select>
+        </section>
+        <br><br>
+        <div class="mes"><h2>Mes 1</h2></div>
+        <br><br>
+        <section class="contenedor-mes">
+            <article>
+                <div class="curso">
+                    <img src="img/ingles.jpg" alt="curso-ingles" class="img-resp">
+                 <div>
+                        <h3>INGLES-NIVEL 1</h3>
+                        <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Moron</p>
+                        <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    </div>
+                </div>
+                <div class="curso">
+                <img src="img/italian.jpg" alt="curso-italiano" class="img-resp">
+            <div>
+                <h3>ITALIANO-NIVEL 1</h3>
+                <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Ramos Mejia</p>
+                <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+            </div>
+        </div>
+            </article>
+           
+            <article>
+                <div class="curso">
+                <img src="img/portugues.jpg" alt="curso-portugues" class="img-resp">
+           <div>
+                <h3>PORTUGUES-NIVEL 1</h3>
+                <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> San Justo</p>
+                <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+            </div>
+        </div>
+        <div class="curso">
+                <img src="img/frances.jpg" alt="curso-frances" class="img-resp">
+                <div>
+                <h3>FRANCES-NIVEL 1</h3>
+                <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Ituzaingo</p>
+                <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+        </div>
+        </div>
+            </article>
+        </section>
+        <br><br>
+        <div class="mes"><h2>Mes 2</h2></div>
+        <br><br>
+        <section class="contenedor-mes">
+        <article>
+        <div class="curso">
+            <img src="img/ingles.jpg" alt="curso-ingles" class="img-resp">
+            <div>
+                <h3>INGLES-NIVEL 2</h3>
+                <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Moron</p>
+                <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+            </div>
+        </div>
+        <div class="curso">
+        <img src="img/italian.jpg" alt="curso-italiano" class="img-resp">
+    <div>
+        <h3>ITALIANO-NIVEL 2</h3>
+        <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Ramos</p>
+        <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+    </div>
+</div>
+    </article>
+   
+    <article>
+        <div class="curso">
+        <img src="img/portugues.jpg" alt="curso-portugues" class="img-resp">
+   <div>
+        <h3>PORTUGUES-NIVEL 2</h3>
+        <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> San Justo</p>
+        <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+    </div>
+</div>
+<div class="curso">
+        <img src="img/frances.jpg" alt="curso-frances" class="img-resp">
+        <div>
+        <h3>FRANCES-NIVEL 2</h3>
+        <p>Modalidad: Virtual <br> Dias y Horarios: <br> Fecha de Inicio: <br> Ituzaingo</p>
+        <a class="bt-inscripcion" href="inscripcion.html">Inscribirse</a>
+</div>
+</div>
+        </section>
+    </main>
+    <footer>
+        <div class="grupo">
+            <h3>Datos del Grupo</h3>
+            <ul>
+              <li>Ruiz Diaz Juan Ramón - 31774500</li>
+             
+              <li>Echegaray Pablo Jonathan - 38947619</li>
+              <li>Mico Alan Nahuel - 33935135</li>
+            </ul>
+        </div>
+        <div class="mapa__sitio">
+            <p class="titulo_mapa_sitio">MAPA DE SITIO</p>
+            <ul>
+              
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="./js/filtro-calendario.js"></script>
+</body>
+</html>

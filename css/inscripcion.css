@@ -1,0 +1,114 @@
+:root{
+    --form-ok-color: #4caf50;
+    --form-error-color: #f44336;
+}
+.datos__curso{
+    text-align: center;
+    margin:20px;
+}
+.contacto{
+    margin: auto;
+    background-color:#FF8595;
+
+  
+    padding:10px;
+}
+label{
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+input{
+    width: 80%;
+    height: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+input[type=submit]{
+    width: 120px;
+    height: 30px;
+    margin:10px;
+    background-color:#CC0180;
+}
+input[type=reset]{
+    width: 100px;
+    height: 30px;
+    margin:10px;
+    background-color:#CC0180;
+}
+select{
+    width: 70%;
+    height: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*validacion formulario*/
+#form [required]:valid{
+    border: thin solid var(--form-ok-color)
+}
+
+#form [required]:invalid{
+    border: thin solid var(--form-error-color)
+}
+
+.contact-form-error{
+    margin-top: 0;
+    font-size: 80%;
+    width: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+    text-align: center;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none{
+    display: none;
+}
+
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+.contacto{
+    display: flex;
+    width: 90%;
+    border-radius: 40px;
+    margin:15px;
+}
+.seccion__1{
+    width: 60%;
+}
+.seccion__2{
+    width: 40%;
+}
+}
+@media screen and (min-width: 768px){
+    .seccion__1{
+        width: 70%;
+    }
+    .seccion__2{
+        width: 30%;
+    }
+}

@@ -1,0 +1,125 @@
+:root{
+    --main-font: sans-serif;
+    --font-size: 1em;
+    --main-color: #f7df1e;
+    --second-color: #222;
+    --main-modal-color: rgba(247,222,30,0.85);
+    --second-modal-color: rgba(34, 34, 34, 0.85);
+    --container-width: 1200px;
+}
+
+img{
+    border-radius: 0.5em;
+    max-width: 100%;
+    height: auto;
+}
+
+/* H1 y buscador*/
+main section{
+    padding-top: 0.2em;
+    text-align: center;
+    display: grid;
+    
+}
+
+
+/*Articles .place | cada establecimiento*/
+main section .place{
+    margin: auto;
+    margin-top: 1em;
+    width: 60%;
+    /* background-color: #f7df1e; */
+}
+
+main section .place div {
+    text-align: start;
+}
+
+main section .place div button{
+   font-size: 1em;
+   width: 6em;
+   border-radius: 0.3em;
+   background-color: gray;
+   border: 2px solid var(--second-color);
+   color:white;
+   cursor: pointer;
+   transition: 0.2s all;
+}
+
+main section .place div button:hover{
+    transform: scale(1.01);
+    box-shadow: 0.07em 0.04em 0.3em var(--second-color);
+}
+
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+} 
+
+/*FIN Articles .place | cada establecimiento*/
+
+/*Medias Querys*/
+@media screen and (min-width: 30em){
+    
+    main section .place div{
+        *background-color: #f7df18;
+        text-align: center;
+
+    }
+}
+
+
+@media screen and (min-width: 45em){
+
+    main section .search{
+        *background-color: #f7df1e;
+    }
+
+    main section .search input{
+        width: 80%;
+    }
+
+    main section .place{
+        display: flex;
+        justify-content: space-around;
+        *background-color: aliceblue;
+        width: 90%;
+    }
+
+    main section .place div{
+        width: 50%;
+        
+        text-align: start;
+
+    }
+
+    main section .place img{
+      
+       width: 40%;
+    }
+
+    main section .place div h2{
+        margin: 1em 0;
+    }
+
+    main section .place div button{
+        margin-top: 1em;
+    }
+   
+}
+
+@media screen and (min-width: 60em){
+
+    main section .search input{
+        width: 90%;
+        max-width: 60em;
+        height: 3em;
+    }
+
+    main section .place{
+        max-width: 52rem;
+        margin-top: 0.3em;
+    }
+    
+}

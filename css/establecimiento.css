@@ -1,0 +1,88 @@
+main section:first-of-type{
+    *background-color: blueviolet;
+}
+
+img{
+    border-radius: 0.5em;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 40em){
+    
+    main > div{
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    main section:first-of-type{
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section:first-of-type div{
+        width: 35%;
+        *background-color: aliceblue;
+    }
+
+    main section:first-of-type div ul li {
+       margin-top:1.5em;
+        
+    }
+
+    main section:first-of-type img{
+        width: 60%;
+    }
+
+    main section:last-child > div{
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    main section:last-child article{
+        display: flex;
+        margin: 2em auto;
+        *background-color: yellow;
+        width: 90%;
+
+    }
+
+    main section:last-child article .proximo-curso{
+        display: flex;
+        font-size: 80%;
+        width: calc(50% - 1em);
+    }
+
+    main section:last-child article .proximo-curso div{
+        margin:0.7em 0 0 0.7em;
+    }
+
+    main section:last-child article .proximo-curso img{
+        width: 70%;
+    }
+
+    main section:last-child article .proximo-curso div h3{
+        font-size: 100%;
+        margin-bottom: 0.7em;
+    }
+
+    main section:last-child article .proximo-curso div ul li{
+        margin-bottom: 0.8em;
+    }
+
+    main section:last-child article .proximo-curso div button{
+        margin-top: 1em;
+        width: 90%;
+        background-color: rgb(73, 72, 72);
+        color: white;
+        cursor: pointer;
+        border-radius: 0.3em;
+    }
+
+    
+
+
+    
+}

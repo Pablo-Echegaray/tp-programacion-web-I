@@ -1,0 +1,48 @@
+:root{
+  --color-principal:#F25C05;
+  --color-secundario:#F29F05;
+  --color-terciario:#84D904;
+  --color-form-txt_mapas:#FF8595;
+  --fuente-principal:'Zen Antique Soft', serif;
+  --fuente-secundaria:'Roboto Slab', serif;
+}
+.titulo{
+  text-align:center;
+}
+.nosotros{
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+}
+.profesores_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foto_profesor{
+  margin:1%;
+  width: 15em;
+  height: 12em;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+
+.profesores_container{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr; 
+
+  margin: 3%;
+}
+
+.foto_profesor{
+  width:220px;
+  height:180px;
+  background-color: black;
+  margin-bottom: 5%;
+  }
+.foto_profesor:hover{
+  transform:scale(1.2)
+  }
+}
